@@ -10,7 +10,7 @@ import tk.tvshome.testmod.testmod;
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
         super(generator, testmod.MODID, existingFileHelper);
-        testmod.LOGGER.error("hello from registermodels");
+
     }
 
     @Override
@@ -23,7 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     private void builder(ModelFile itemGenerated,String name) {
-        getBuilder(name).parent(itemGenerated).texture("layer0",name);
+        getBuilder(name).parent(itemGenerated).texture("layer0","item/"+name);
     }
 
 }

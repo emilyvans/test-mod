@@ -32,7 +32,6 @@ public class testmod
 
     public testmod() {
         Registration.register();
-        DataGenerators m = new DataGenerators();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
